@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>室友生活協調系統</title>
+  <meta name="description" content="專為大學生合租族群設計的生活協調工具：公共費用拆帳、值日生排班輪替、靜音協議模式，讓室友生活更公平和諧。" />
+  <meta name="theme-color" content="#0a0918" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- App renders here via JS -->
+    <div class="bg-gradient"></div>
+    <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;position:relative;z-index:1;">
+      <div style="text-align:center;color:#94a3b8;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">🏠</div>
+        <div style="font-size:1rem;">載入中…</div>
+      </div>
+    </div>
+    <div class="toast-container" id="toast-container"></div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/expenses.js"></script>
+  <script src="js/roster.js"></script>
+  <script src="js/silent.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
